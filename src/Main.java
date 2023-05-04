@@ -18,12 +18,16 @@ public class Main {
         int count = 15000;
         int limit = 20000;
 
+        //Multithread part was sorting already sorted arrays that's why it was this fast lmao
         int[] arr1 = IntStream.generate(() -> new Random().nextInt(limit)).limit(count).toArray();
         int[] arr2 = IntStream.generate(() -> new Random().nextInt(limit)).limit(count).toArray();
-
+        //Another set of identical arrays
+        int[] arr1m = arr1.clone();
+        int[] arr2m = arr2.clone();
+        
         //Thread init
-        SecThread thr1 = new SecThread(arr1);
-        SecThread thr2 = new SecThread(arr2);
+        SecThread thr1 = new SecThread(arr1m);
+        SecThread thr2 = new SecThread(arr2m);
 
 
         //Timer start
