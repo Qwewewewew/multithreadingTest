@@ -1,18 +1,7 @@
-## Getting Started
+##Multithreading test in java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Continuing to mess around with java stuff and creating some sort of portfolio
 
-## Folder Structure
+The program compares the time of bubble sorting two arrays `arr1` and `arr2`, `"count"` integers in range of `[0, limit]` each
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+The first part is executed in single thread, the second one is split into two.
